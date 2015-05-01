@@ -1,9 +1,5 @@
 //
 //  CoreTelephonySampleTests.m
-//  CoreTelephonySampleTests
-//
-//  Created by Makoto Nishijima on 2015/05/01.
-//  Copyright (c) 2015年 makopy.inside. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
