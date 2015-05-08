@@ -8,10 +8,21 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
+typedef enum {
+    
+    CTCallNotDetermined = 0,
+    CTCallDialing,
+    CTCallIncoming,
+    CTCallConnected,
+    CTCallDisconnected,
+    
+} CTCallState;
+
 @interface CTTelephonyManager : NSObject
 
 #pragma mark - Property
 @property (nonatomic, retain) CTCallCenter *callCenter;
+@property (nonatomic, readonly) CTCallState callState;
 
 #pragma mark - Singleton Implementation
 + (CTTelephonyManager *)sharedInstance;
